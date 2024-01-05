@@ -311,7 +311,7 @@ void Game::sUserInput() {
 			}
 		}
 
-		if (event.type == sf::Event::MouseButtonPressed) {
+		if (event.type == sf::Event::MouseButtonPressed && !m_paused) {
 			if (event.mouseButton.button == sf::Mouse::Left) {
 				spawnBullet(m_player, Vec2(event.mouseButton.x, event.mouseButton.y));
 			}
