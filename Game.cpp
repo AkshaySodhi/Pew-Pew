@@ -284,7 +284,7 @@ void Game::sUserInput() {
 				m_paused = !m_paused;
 				break;
 			case sf::Keyboard::Escape:
-				m_window.close();
+				m_running = false;
 				break;
 			default:
 				break;
